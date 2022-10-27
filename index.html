@@ -20,6 +20,171 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <div class="header-background">
+      <header>
+        <nav class="navbar expandable" id="nav">
+          <a class="navbar__brand" href="/"
+            ><img src="./images/logo.png" alt="DMSTEX"
+          /></a>
+
+          <span class="material-symbols-outlined navbar__toggler"> Menu </span>
+
+          <ul class="list navbar__list expandable__content">
+            <li class="navbar__item"><a href="#services">Services</a></li>
+            <li class="navbar__item"><a href="#about">About</a></li>
+            <li class="navbar__item"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="block" id="hero">
+        <div class="container grid grid--1x2">
+          <header class="block__header hero__section">
+            <h1 class="hero__heading">Application Development Services</h1>
+            <p class="hero__text">
+              Generate source code with industry proven analysis and design
+              practices.
+            </p>
+            <button class="button--clear">
+              <a href="#contact">Get Started </a>
+            </button>
+            <button class="button--clear">
+              <a href="https://github.com/DDieterich/dtgen/blob/wiki/README.md"
+                >DTGen Project</a
+              >
+            </button>
+          </header>
+          <picture>
+            <!-- TODO: Get image approval, image sizing, alt text -->
+            <img class="hero__image" src="./images/cloud.png" alt="" />
+          </picture>
+        </div>
+      </section>
+    </div>
+
+    <!-- TODO: Get approval of images -->
+    <div class="services-background">
+      <section class="block container" id="services">
+        <header class="block__header">
+          <h2>Database Design and Generation</h2>
+          <p>
+            DMSTEX provides Oracle Database Design and Generation Services
+            (DDGS). We offer Oracle based solutions because of its reliability
+            and scalability from the smallest of installations to the largest
+            record breaking systems. The Database Design and Generation Service
+            includes:
+          </p>
+        </header>
+
+        <article class="grid grid--1x2 services">
+          <div class="services__content">
+            <h3 class="services__heading">Database Schema</h3>
+            <p>
+              Database object definition in SQL and PL/SQL including: tables,
+              indexes, triggers, and packages.
+            </p>
+          </div>
+          <img class="services__img" src="./images/schema.png" alt="" />
+        </article>
+
+        <article class="grid grid--1x2 services">
+          <div class="services__content">
+            <h3 class="services__heading">PL/SQL API</h3>
+            <p>
+              Includes procedure and optional function calls for insert, update,
+              and delete using table row buffers and individual columns.
+            </p>
+          </div>
+          <img class="services__img" src="./images/api.png" alt="" />
+        </article>
+
+        <article class="grid grid--1x2 services">
+          <div class="services__content">
+            <h3 class="services__heading">Test Data</h3>
+            <p>
+              Random sample data to assist with development testing. (We can
+              also help with load modeling and capacity analysis.)
+            </p>
+          </div>
+          <img class="services__img" src="./images/test.png" alt="" />
+        </article>
+
+        <article class="grid grid--1x2 services">
+          <div class="services__content">
+            <h3 class="services__heading">Maintenance Forms</h3>
+            <!-- TODO: Add apex link -->
+            <p>
+              Basic query, insert, update and delete on all tables. Also
+              includes LOV and navigation UI elements. This is all built into
+              the database (APEX).
+            </p>
+          </div>
+          <img
+            class="services__img image--bg--highlight"
+            src="./images/form.png"
+            alt=""
+          />
+        </article>
+      </section>
+    </div>
+
+    <section class="block container">
+      <header class="block__header">
+        <h2>Benefits of DDGS Database Schema and PL/SQL API</h2>
+      </header>
+
+      <div class="grid grid--1x2 benefits">
+        <ul class="list">
+          <li class="list__item">
+            <span class="material-symbols-outlined icon"> priority </span>
+            Temporal Database (With Audit)
+          </li>
+          <li class="list__item">
+            <span class="material-symbols-outlined icon"> priority </span>
+            Bi-Temporal Database (With Audit)
+          </li>
+          <li class="list__item">
+            <span class="material-symbols-outlined icon"> priority </span>
+            Quantized Date/Time
+          </li>
+          <li class="list__item">
+            <span class="material-symbols-outlined icon"> priority </span>
+            Package Based Discrete Domains
+          </li>
+          <li class="list__item">
+            <span class="material-symbols-outlined icon"> priority </span>
+            DML undo on Primary Keys
+          </li>
+          <li class="list__item">
+            <span class="material-symbols-outlined icon"> priority </span>
+            DML Enabled Sub-Type Views and PL/SQL APIs
+          </li>
+        </ul>
+        <ul class="list">
+          <li class="list__item">
+            <span class="material-symbols-outlined icon"> priority </span>
+            Natural Key Update-able Views
+          </li>
+          <li class="list__item">
+            <span class="material-symbols-outlined icon"> priority </span>Full
+            Procedural PL/SQL APIs
+          </li>
+          <li class="list__item">
+            <span class="material-symbols-outlined icon"> priority </span>
+            Full Path Hierarchical Data
+          </li>
+          <li class="list__item">
+            <span class="material-symbols-outlined icon"> priority </span>
+            Automatic US7ASCII Conversion
+          </li>
+          <li class="list__item">
+            <span class="material-symbols-outlined icon"> priority </span>
+            APEX Data Maintenance Forms and Reports
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <script src="./js/script.js"></script>
   </body>
 </html>
