@@ -102,6 +102,16 @@ button:hover {
   cursor: pointer;
 }
 
+/* Icons */
+.icon {
+  justify-self: center;
+  background-color: rgba(194, 194, 194, 0.1);
+  box-shadow: 1px 1px 15px 0.05px rgba(194, 194, 194, 0.35);
+  -moz-box-shadow: 1px 1px 15px 0.05px rgba(194, 194, 194, 0.35);
+  -webkit-box-shadow: 1px 1px 15px 0.05px rgba(194, 194, 194, 0.35);
+  margin-right: 0.7rem;
+}
+
 /* Lists/Links */
 a {
   text-decoration: none;
@@ -296,5 +306,28 @@ a:hover {
   }
   .services__content {
     width: 60%;
+  }
+}
+
+/* Benefits */
+.benefits .list {
+  width: 80%;
+  margin: 0;
+  justify-self: center;
+}
+
+.benefits .list__item {
+  line-height: 4.5rem;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 940px) {
+  .benefits .list {
+    width: 100%;
+  }
+
+  .benefits .list__item {
+    line-height: 6rem;
+    font-size: 2rem;
   }
 }
