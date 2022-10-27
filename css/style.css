@@ -259,3 +259,42 @@ a:hover {
     letter-spacing: 1.5px;
   }
 }
+
+/* Services */
+.services {
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+}
+.services__content {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin: auto;
+  width: 80%;
+}
+
+.services:first-of-type {
+  margin-top: 6rem;
+}
+
+.services__heading {
+  margin: 2rem 0;
+}
+
+.services__img {
+  width: 100%;
+}
+
+.services:nth-of-type(even) .services__content {
+  text-align: right;
+}
+
+@media screen and (min-width: 940px) {
+  /* Alternate content */
+  .services:nth-of-type(even) .services__content {
+    order: 2;
+    text-align: left;
+  }
+  .services__content {
+    width: 60%;
+  }
+}
