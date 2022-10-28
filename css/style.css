@@ -290,7 +290,12 @@ a:hover {
 }
 
 .services__img {
+  align-self: center;
   width: 100%;
+}
+
+.service {
+  padding: 2rem 0;
 }
 
 .services:nth-of-type(even) .services__content {
@@ -309,6 +314,10 @@ a:hover {
 }
 
 /* Benefits */
+.benefit {
+  text-align: left;
+}
+
 .benefits .list {
   width: 80%;
   margin: 0;
