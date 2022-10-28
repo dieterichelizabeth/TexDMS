@@ -340,7 +340,19 @@ a:hover {
   }
 }
 
-/* FINALLY!! The Background Gradients */
+/* Footer */
+footer {
+  max-width: 900px;
+  margin: 3rem auto;
+}
+
+footer p {
+  font-size: 1.2rem;
+  line-height: 1rem;
+  text-align: center;
+}
+
+/* Background Gradients */
 .services-background {
   background: radial-gradient(
     ellipse farthest-corner at 100% 50%,
@@ -362,12 +374,6 @@ a:hover {
 }
 
 .image--bg--highlight {
-  /* background: rgb(200, 200, 207);
-  background: radial-gradient(
-    circle,
-    rgba(200, 200, 207, 0.4500393907563025) 0%,
-    rgba(9, 12, 37, 1) 65%
-  ); */
   background: rgb(184, 214, 218);
   background: radial-gradient(
     circle,
