@@ -16,6 +16,7 @@
 /* Fonts */
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -104,6 +105,14 @@ button:hover {
 
 /* Icons */
 .icon {
+  border-radius: 50%;
+  padding: 1rem;
+  font-size: 4rem;
+  position: absolute;
+  transform: translate(-20px, -43px);
+}
+
+.icon--white {
   justify-self: center;
   background-color: rgba(194, 194, 194, 0.1);
   box-shadow: 1px 1px 15px 0.05px rgba(194, 194, 194, 0.35);
@@ -239,6 +248,9 @@ a:hover {
   .grid--1x2 {
     grid-template-columns: 1fr 1fr;
   }
+  .grid--2x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* Hero Section */
@@ -340,6 +352,19 @@ a:hover {
   }
 }
 
+/* Demonstrations */
+.card {
+  background-color: #93939414;
+  border-radius: 15px;
+  margin: 4rem 1rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.card__body a {
+  color: var(--color-body);
+}
+
 /* Footer */
 footer {
   max-width: 900px;
@@ -353,6 +378,16 @@ footer p {
 }
 
 /* Background Gradients */
+.header-background {
+  background: rgb(116, 129, 194);
+  background: linear-gradient(
+    159deg,
+    rgba(116, 129, 194, 0.6574746008708272) 0%,
+    rgba(55, 77, 189, 0.7111756168359942) 18%,
+    rgba(9, 12, 37, 1) 53%
+  );
+}
+
 .services-background {
   background: radial-gradient(
     ellipse farthest-corner at 100% 50%,
@@ -363,13 +398,13 @@ footer p {
   );
 }
 
-.header-background {
-  background: rgb(116, 129, 194);
-  background: linear-gradient(
-    159deg,
-    rgba(116, 129, 194, 0.6574746008708272) 0%,
-    rgba(55, 77, 189, 0.7111756168359942) 18%,
-    rgba(9, 12, 37, 1) 53%
+.benefits-background {
+  background: radial-gradient(
+    ellipse farthest-corner at -20% 50%,
+    rgba(116, 129, 194, 0.6574746008708272),
+    rgba(55, 77, 189, 0.7111756168359942) 10%,
+    rgba(9, 12, 37, 1) 50%,
+    rgba(9, 12, 37, 1)
   );
 }
 
