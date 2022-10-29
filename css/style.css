@@ -365,6 +365,22 @@ a:hover {
   color: var(--color-body);
 }
 
+/* Contact */
+.contact__body {
+  align-self: center;
+}
+
+.contact__image {
+  width: 90%;
+  padding-left: 10%;
+}
+
+@media screen and (min-width: 940px) {
+  .contact__image {
+    width: 80%;
+  }
+}
+
 /* Footer */
 footer {
   max-width: 900px;
