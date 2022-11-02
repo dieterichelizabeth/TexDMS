@@ -112,21 +112,24 @@ button:hover {
 }
 
 /* Icons */
-.icon {
-  border-radius: 50%;
-  padding: 1rem;
-  font-size: 4rem;
-  position: absolute;
-  transform: translate(-20px, -43px);
+.icons {
+  width: 30px;
+  height: 30px;
+}
+
+.icon--med {
+  width: 40px;
+  height: 40px;
 }
 
 .icon--white {
-  justify-self: center;
-  background-color: rgba(194, 194, 194, 0.1);
-  box-shadow: 1px 1px 10px 0.05px rgba(194, 194, 194, 0.35);
-  -moz-box-shadow: 1px 1px 10px 0.05px rgba(194, 194, 194, 0.35);
-  -webkit-box-shadow: 1px 1px 10px 0.05px rgba(194, 194, 194, 0.35);
-  margin-right: 0.7rem;
+  fill: var(--color-headings);
+}
+
+.icon__demo {
+  fill: var(--color-body);
+  position: absolute;
+  transform: translate(-15px, -30px);
 }
 
 /* Lists/Links */
@@ -208,11 +211,17 @@ a:hover {
   opacity: 0.8;
   transition: box-shadow 0.1s;
   cursor: pointer;
+  justify-self: center;
+  background-color: rgba(194, 194, 194, 0.1);
+  box-shadow: 1px 1px 10px 0.05px rgba(194, 194, 194, 0.35);
+  -moz-box-shadow: 1px 1px 10px 0.05px rgba(194, 194, 194, 0.35);
+  -webkit-box-shadow: 1px 1px 10px 0.05px rgba(194, 194, 194, 0.35);
+  margin-right: 0.7rem;
 }
 
 .navbar.expandable--expanded .navbar__toggler {
   opacity: 1;
-  box-shadow: 0 0 0 3px #667;
+  box-shadow: 0 0 0 1px #667;
   border-radius: 7px;
 }
 
@@ -346,6 +355,11 @@ a:hover {
 
 .benefits .list__item {
   font-size: 1rem;
+}
+
+.item--checked::marker {
+  content: "✓ ";
+  font-size: 1.2em;
 }
 
 @media screen and (min-width: 940px) {
