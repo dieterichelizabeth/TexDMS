@@ -384,7 +384,8 @@ a:hover {
 /* Footer */
 footer {
   max-width: 900px;
-  margin: 3rem auto;
+  padding: 3rem 0;
+  margin: 0 auto;
 }
 
 footer p {
@@ -430,5 +431,15 @@ footer p {
     circle,
     rgba(184, 214, 218, 0.4500393907563025) 0%,
     transparent 65%
+  );
+}
+
+.contact-background {
+  background: radial-gradient(
+    ellipse farthest-corner at 50% 110%,
+    rgba(116, 129, 194, 0.6574746008708272),
+    rgba(55, 77, 189, 0.7111756168359942) 10%,
+    rgba(9, 12, 37, 1) 60%,
+    rgba(9, 12, 37, 1)
   );
 }
