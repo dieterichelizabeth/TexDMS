@@ -29,6 +29,14 @@ body {
   margin: 0;
 }
 
+summary {
+  color: var(--color-headings);
+}
+
+summary::marker {
+  color: var(--color-body);
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
