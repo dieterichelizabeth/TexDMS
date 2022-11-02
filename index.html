@@ -39,6 +39,7 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="header-background">
@@ -62,7 +63,7 @@
       <!-- Hero -->
       <section class="block" id="hero">
         <div class="container grid grid--1x2">
-          <header class="block__header hero__section">
+          <header class="block__header hero__section" data-aos="fade-right">
             <h1 class="hero__heading">Application Development Services</h1>
             <p class="hero__text">
               Generate source code with industry proven analysis and design
@@ -80,7 +81,12 @@
             </button>
           </header>
           <picture>
-            <img class="hero__image" src="./images/cloud.png" alt="" />
+            <img
+              class="hero__image"
+              src="./images/cloud.png"
+              alt=""
+              data-aos="fade-left"
+            />
           </picture>
         </div>
       </section>
@@ -89,7 +95,7 @@
     <!-- Services -->
     <div class="services-background">
       <section class="block container" id="services">
-        <header class="block__header">
+        <header class="block__header" data-aos="fade-up">
           <h2>Database Design and Generation</h2>
           <p>
             DMSTEX provides Oracle Database Design and Generation Services
@@ -100,7 +106,7 @@
           </p>
         </header>
 
-        <article class="grid grid--1x2 services">
+        <article class="grid grid--1x2 services" data-aos="fade-left">
           <div class="services__content">
             <div class="service">
               <h3 class="services__heading">Database Schema</h3>
@@ -123,7 +129,7 @@
           <img class="services__img" src="./images/api.png" alt="" />
         </article>
 
-        <article class="grid grid--1x2 services">
+        <article class="grid grid--1x2 services" data-aos="fade-right">
           <div class="services__content">
             <div class="service">
               <h3 class="services__heading">Test Data</h3>
@@ -151,7 +157,7 @@
 
     <!-- Benefits -->
     <div class="benefits-background">
-      <section class="container block">
+      <section class="container block" data-aos="flip-down">
         <header>
           <h2>Benefits of DDGS Database Schema and PL/SQL API</h2>
         </header>
@@ -231,11 +237,11 @@
 
       <!-- Demonstrations -->
       <section class="block container">
-        <header class="block__header">
+        <header class="block__header" data-aos="fade-right">
           <h2>Demonstrations</h2>
         </header>
 
-        <div class="grid grid--2x3 demonstration">
+        <div class="grid grid--2x3 demonstration" data-aos="zoom-in">
           <div class="card">
             <span class="material-symbols-outlined icon"> insights </span>
             <header class="card__header">
@@ -402,8 +408,13 @@
     <div class="technology--background">
       <!-- Technology -->
       <section class="grid grid--1x2 container" id="technology">
-        <img src="./images/schema.png" class="technologies__img" alt="" />
-        <div class="block">
+        <img
+          src="./images/schema.png"
+          class="technologies__img"
+          alt=""
+          data-aos="fade-right"
+        />
+        <div class="block" data-aos="fade-left">
           <h2>Technology</h2>
           <h3>Why Oracle?</h3>
           <p>
@@ -469,7 +480,7 @@
 
       <!-- About -->
       <section class="container" id="about">
-        <div class="block">
+        <div class="block" data-aos="fade-up">
           <h2>About</h2>
           <p>
             DMSTEX is an Oracle database focused company located in the Dallas -
@@ -687,7 +698,7 @@
 
     <!-- Contact -->
     <div class="contact-background">
-      <section class="block" id="contact">
+      <section class="block" id="contact" data-aos="zoom-in">
         <div class="container grid grid--1x2">
           <header class="block__header contact__body">
             <h2>Contact Us</h2>
@@ -722,6 +733,10 @@
     </div>
 
     <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
 
