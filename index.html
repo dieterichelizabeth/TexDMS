@@ -52,12 +52,14 @@
 
           <ul class="list navbar__list expandable__content">
             <li class="navbar__item"><a href="#services">Services</a></li>
-            <li class="navbar__item"><a href="/about.html">About</a></li>
+            <li class="navbar__item"><a href="#technology">Technology</a></li>
+            <li class="navbar__item"><a href="#about">About</a></li>
             <li class="navbar__item"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
 
+      <!-- Hero -->
       <section class="block" id="hero">
         <div class="container grid grid--1x2">
           <header class="block__header hero__section">
@@ -84,6 +86,7 @@
       </section>
     </div>
 
+    <!-- Services -->
     <div class="services-background">
       <section class="block container" id="services">
         <header class="block__header">
@@ -146,9 +149,10 @@
       </section>
     </div>
 
+    <!-- Benefits -->
     <div class="benefits-background">
-      <section class="block container">
-        <header class="block__header benefit">
+      <section class="container block">
+        <header>
           <h2>Benefits of DDGS Database Schema and PL/SQL API</h2>
         </header>
 
@@ -225,6 +229,7 @@
         </div>
       </section>
 
+      <!-- Demonstrations -->
       <section class="block container">
         <header class="block__header">
           <h2>Demonstrations</h2>
@@ -394,69 +399,293 @@
       </section>
     </div>
 
-    <!-- Technology -->
-    <section class="block container">
-      <header class="block__header">
-        <h2>Technology</h2>
-      </header>
-      <h3>Why Oracle?</h3>
-      <p>
-        Oracle is a well-known and respected name in the field of information
-        technology. The Oracle database provides industry leading performance,
-        reliability, and full scalability from the smallest to the largest
-        systems.
-      </p>
+    <div class="technology--background">
+      <!-- Technology -->
+      <section class="grid grid--1x2 container" id="technology">
+        <img src="./images/schema.png" class="technologies__img" alt="" />
+        <div class="block">
+          <h2>Technology</h2>
+          <h3>Why Oracle?</h3>
+          <p>
+            Oracle is a well-known and respected name in the field of
+            information technology. The Oracle database provides industry
+            leading performance, reliability, and full scalability from the
+            smallest to the largest systems.
+          </p>
 
-      <details>
-        <summary>Isn't Oracle Expensive?</summary>
-        <p>
-          Oracle has always been completive in their dealings. As a technical
-          person, I understand that technical personnel are rarely included
-          acquisition negotiations and usually do not see the discounts that
-          result. Additionally, Oracle has worked very hard to be the most
-          competitive cloud provider, resulting in reduced costs when moving
-          from Amazon Web Services to Oracle Could Infrastructure.
-        </p>
-      </details>
+          <details>
+            <summary>Isn't Oracle Expensive?</summary>
+            <p>
+              Oracle has always been completive in their dealings. As a
+              technical person, I understand that technical personnel are rarely
+              included acquisition negotiations and usually do not see the
+              discounts that result. Additionally, Oracle has worked very hard
+              to be the most competitive cloud provider, resulting in reduced
+              costs when moving from Amazon Web Services to Oracle Could
+              Infrastructure.
+            </p>
+          </details>
 
-      <details>
-        <summary>Temporal Database</summary>
-        <p>
-          TEMPORAL DATABASE WAS ADDED IN THE SQL:2011 STANDARD. ORACLE STARTED
-          SUPPORT FOR THIS CAPABILITY IN ORACLE11G/TOTAL RECALL, ORACLE
-          12C/VLDB, AND . HOWEVER, THE CURRENT ORACLE 21C IMPLEMENTATION DOES
-          NOT ENFORCE TEMPORAL CONSTRAINTS. A PRIMARY KEY CONSTRAINTS EXAMPLE IS
-          GIVEN BELOW. AT DMSTEX, WE CAN GENERATE NATIVE PL/SQL CODE TO PERFORM
-          TEMPORAL CONSTRAINT ENFORCEMENT. WE CALL IT TEMPORAL CONTINUITY.
-        </p>
-      </details>
+          <details>
+            <summary>Temporal Database</summary>
+            <p>
+              TEMPORAL DATABASE WAS ADDED IN THE SQL:2011 STANDARD. ORACLE
+              STARTED SUPPORT FOR THIS CAPABILITY IN ORACLE11G/TOTAL RECALL,
+              ORACLE 12C/VLDB, AND . HOWEVER, THE CURRENT ORACLE 21C
+              IMPLEMENTATION DOES NOT ENFORCE TEMPORAL CONSTRAINTS. A PRIMARY
+              KEY CONSTRAINTS EXAMPLE IS GIVEN BELOW. AT DMSTEX, WE CAN GENERATE
+              NATIVE PL/SQL CODE TO PERFORM TEMPORAL CONSTRAINT ENFORCEMENT. WE
+              CALL IT TEMPORAL CONTINUITY.
+            </p>
+          </details>
 
-      <details>
-        <summary>Temporal Continuity</summary>
-        <p>
-          The ability to track Transaction Time (TT) and Valid Time (VT) is a
-          straight-forward implementation of the temporal and bi-temporal
-          database. However, the ability to enforce temporal continuity of
-          Foreign Key and Unique Key constraints is an important aspect of
-          maintaining temporal continuity within that database. This whitepaper
-          provides definitions and examples of temporal continuity enforcement
-          in a temporal database implementation of DDGS
-        </p>
+          <details>
+            <summary>Temporal Continuity</summary>
+            <p>
+              The ability to track Transaction Time (TT) and Valid Time (VT) is
+              a straight-forward implementation of the temporal and bi-temporal
+              database. However, the ability to enforce temporal continuity of
+              Foreign Key and Unique Key constraints is an important aspect of
+              maintaining temporal continuity within that database. This
+              whitepaper provides definitions and examples of temporal
+              continuity enforcement in a temporal database implementation of
+              DDGS
+            </p>
 
-        <p>
-          If temporal constraints are enforced on primary keys, the same primary
-          key could be valid during 2 different time frames. However, Oracle 21c
-          will not allow this situation.
-        </p>
+            <p>
+              If temporal constraints are enforced on primary keys, the same
+              primary key could be valid during 2 different time frames.
+              However, Oracle 21c will not allow this situation.
+            </p>
 
-        <a
-          href="https://drive.google.com/file/d/0Bx7ieVJHnpg5Ukt4blpmU1ZyRzQ/view?resourcekey=0-UyYEBP1XE3I34F6Zi2DSjA"
-          target="_blank"
-          >DDGS Temporal Continuity.pdf</a
-        >
-      </details>
-    </section>
+            <a
+              href="https://drive.google.com/file/d/0Bx7ieVJHnpg5Ukt4blpmU1ZyRzQ/view?resourcekey=0-UyYEBP1XE3I34F6Zi2DSjA"
+              target="_blank"
+              >DDGS Temporal Continuity.pdf</a
+            >
+          </details>
+        </div>
+      </section>
 
+      <!-- About -->
+      <section class="container" id="about">
+        <div class="block">
+          <h2>About</h2>
+          <p>
+            DMSTEX is an Oracle database focused company located in the Dallas -
+            Fort Worth Metroplex. We offer quality software design and
+            development services to meet the needs of businesses. Our company
+            provides personal attention and commitment to our clients, while
+            bringing extensive technical experience and expertise on complex
+            systems.
+          </p>
+
+          <details>
+            <summary>Our Management</summary>
+            <p>
+              DMSTEX, Dallas County, Texas is managed by Duane Dieterich and
+              Michiet Dieterich. They bring 38 years of combined industry
+              experience to the company. This includes 22 years of experience in
+              Oracle/UNIX consulting, development and administration in 13
+              different organizations, spanning 12 industries along with
+              engineering and management experience.
+            </p>
+          </details>
+
+          <details>
+            <summary>Our Mission</summary>
+            <p>
+              The company uses innovative techniques in the software development
+              process to increase efficiency and apply knowledge gained through
+              experience to improve quality. This allows us to provide services
+              that are reliable and affordable.
+            </p>
+          </details>
+
+          <details>
+            <summary>Philosophy</summary>
+            <p class="CDt4Ke zfr3Q">
+              The following are some basic beliefs we use to guide our
+              practices.
+            </p>
+
+            <article>
+              <h3>ALL GOOD THINGS COME FROM GOD</h3>
+              <p>
+                "The fear of the Lord is the beginning of wisdom; all who follow
+                his precepts have good understanding. To him belongs eternal
+                praise."
+                <span
+                  ><a
+                    href="http://www.google.com/url?q=http%3A%2F%2Fwww.biblegateway.com%2Fpassage%2F%3Fsearch%3DPsalm%2B111%253A10&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw2bJPf1VDKDnrN2dzvQiMTj"
+                    target="_blank"
+                    >Psalm 111:10</a
+                  ></span
+                >
+              </p>
+            </article>
+
+            <article>
+              <h3>DON'T AVOID THE HARD WORK</h3>
+              <p>
+                "The most practical, beautiful, workable philosophy in the world
+                won't work if you won't." -<span
+                  ><a
+                    href="http://www.google.com/url?q=http%3A%2F%2Fwww.ziglar.com%2Fquotes%2Fmost-practical-beautiful-workable-philosophy&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw0cyovnAKyjhgeYoNYKwXkO"
+                    target="_blank"
+                    >Zig Ziglar</a
+                  ></span
+                >
+              </p>
+              <p>
+                "It's easier to explain price once than to apologize for quality
+                forever."-<span
+                  ><a
+                    href="http://www.google.com/url?q=http%3A%2F%2Fwww.ziglar.com%2Fquotes%2Fits-easier-explain-price-once&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw2xhf1s6bGvlAZIVVc1lEO7"
+                    target="_blank"
+                    >Zig Ziglar</a
+                  ></span
+                >
+              </p>
+            </article>
+
+            <article>
+              <h3>DATA MODELS ARE THE FOUNDATION</h3>
+              <p>
+                <span
+                  ><a
+                    href="http://www.google.com/url?q=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBusiness_process&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw0Yy17o4_j0gdTaXs_1bhki"
+                    target="_blank"
+                    >Business processes</a
+                  ></span
+                >
+                (how a business operates) change faster than
+                <span
+                  ><a
+                    href="http://www.google.com/url?q=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FData_model&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw1VUglIQMbr0nCZCUwl_lH0"
+                    target="_blank"
+                    >data models</a
+                  ></span
+                >
+                (what a business operates on). Whether it's credits/debits,
+                product/services, or customers/vendors, the basic "what" of a
+                business doesn't change much. In contrast, business processes
+                can change often. Applications with comprehensive data models
+                support changes to business processes more efficiently.
+              </p>
+            </article>
+
+            <article>
+              <h3>THREE KINDS OF DATA STRUCTURES</h3>
+              <p>
+                In data modeling, there are three kinds of data structures in an
+                application:
+              </p>
+              <ol>
+                <li>
+                  <p>
+                    Business Objects - Fundamentals of the business, whether
+                    computerized or not. Ex. credits/debits, product/services,
+                    etc
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Business Intelligence Objects - Reporting and Information,
+                    whether computerized or not. Ex. month-end aggregates, units
+                    queued at an operation
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    System Objects - Necessary for computerized use. Ex. users,
+                    login history, error logs.
+                  </p>
+                </li>
+              </ol>
+            </article>
+
+            <article>
+              <h3>PRE-DEFINED BUSINESS OBJECTS</h3>
+              <p>
+                Pre-defined Essential Entities (<span
+                  ><a
+                    href="http://www.google.com/url?q=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FGeneric_data_model%23Generic_patterns&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw0-cQwXCTbBJzsEMi5aa9RE"
+                    target="_blank"
+                    >Generic Data Model Patterns</a
+                  ></span
+                >) are available and increase efficiency of requirements
+                analysis and design.
+              </p>
+            </article>
+
+            <article>
+              <h3>TWO FORMS OF BUSINESS INTELLIGENCE</h3>
+              <p>
+                In an application architecture, there are two forms of business
+                intelligence:
+              </p>
+              <ol>
+                <li>
+                  <p>Real-Time Reporting</p>
+                </li>
+                <li>
+                  <p>On-Line Analytical Processing (OLAP)</p>
+                </li>
+              </ol>
+            </article>
+
+            <article>
+              <h3>TWO MODES OF SYSTEM OPERATION</h3>
+              <p>
+                In an application implementation, there are two modes of system
+                operation:
+              </p>
+              <ol>
+                <li>
+                  <p>On-Line Transaction Processing (OLTP)</p>
+                </li>
+                <li>
+                  <p>Batch Processing.</p>
+                </li>
+              </ol>
+            </article>
+
+            <article>
+              <h3>ORACLE DATABASE FOCUS</h3>
+              <p>Database agnostic requires one of 2 approaches:</p>
+              <ol>
+                <li>
+                  <p>
+                    LCD (lowest common denominator) of database functionality
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    different software/codepaths for each database (increased
+                    complexity)
+                  </p>
+                </li>
+              </ol>
+              <p>
+                Every design decision is driven by this choice. Use of a single
+                database platform increases simplicity and efficiency.
+              </p>
+            </article>
+
+            <article>
+              <h3>SOFTWARE AUTOMATION</h3>
+              <p>
+                "Don't do anything yourself that you can get a machine to do for
+                you." - Walter "Pat" Dieterich, Riesel, TX
+              </p>
+            </article>
+          </details>
+        </div>
+      </section>
+    </div>
+
+    <!-- Contact -->
     <div class="contact-background">
       <section class="block" id="contact">
         <div class="container grid grid--1x2">
@@ -497,9 +726,6 @@
 </html>
 
 <!-- TODO: 
- Review Spacing
  Add alt text to images.
- Re-size Images for mobile.
- Create the "About" page. 
- Create the "Technologies" page. 
+ Re-size Images for mobile, Icons?
 -->
